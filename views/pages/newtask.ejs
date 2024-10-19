@@ -1,0 +1,16 @@
+<!-- views/pages/newTask.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Nueva Tarea</title>
+</head>
+<body>
+  <h1>Agregar Nueva Tarea</h1>
+  <form action="/new-task" method="POST">
+    <input type="text" name="taskName" placeholder="Nombre de la tarea" required>
+    <button type="submit">Agregar</button>
+  </form>
+</body>
+</html>

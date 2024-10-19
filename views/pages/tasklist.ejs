@@ -1,0 +1,21 @@
+<!-- views/pages/taskList.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <a href="" class="btn btn-primary" style="margin: 10px;">Inicio</a>
+</head>
+<body>
+  <h1>Lista de Tareas</h1>
+  <ul>
+    <% tasks.forEach(function(task) { %>
+      <li><%= task.name %></li>
+    <% }); %>
+  </ul>
+  <div class="text-center mt-4">
+    <a href="/" class="btn btn-secondary">Volver a Inicio</a>
+  </div>
+</body>
+</html>
